@@ -15438,7 +15438,7 @@ $$
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -15923,10 +15923,10 @@ $$<p><em>Note:</em> This value doesn't have a particularly meaningful interpreta
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[176]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[179]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">linregress</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s2">&quot;week&quot;</span><span class="p">],</span> <span class="n">df2</span><span class="p">[</span><span class="s2">&quot;savings&quot;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">linregress</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s2">&quot;week&quot;</span><span class="p">],</span> <span class="n">df2</span><span class="p">[</span><span class="s2">&quot;savings&quot;</span><span class="p">])</span><span class="o">.</span><span class="n">pvalue</span>
 </pre></div>
 
      </div>
@@ -15944,13 +15944,13 @@ $$<p><em>Note:</em> This value doesn't have a particularly meaningful interpreta
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[176]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[179]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>LinregressResult(slope=2320.626312644071, intercept=-9580.470972423806, rvalue=0.6560214546655994, pvalue=1.2967281822155235e-07, stderr=377.57290771577703, intercept_stderr=11171.94784767405)</pre>
+<pre>1.2967281822155235e-07</pre>
 </div>
 
 </div>
@@ -15960,6 +15960,18 @@ $$<p><em>Note:</em> This value doesn't have a particularly meaningful interpreta
 </div>
 
 </div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Lesson-4:">Lesson 4:<a class="anchor-link" href="#Lesson-4:">&#182;</a></h3><p>Linear regression allows you to create a line-of-best-fit for two sets of measurements you believe to be linearly correlated, and also gives you information about the strength of their relationship.</p>
+
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16009,14 +16021,10 @@ $$<p><em>Note:</em> This value doesn't have a particularly meaningful interpreta
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[173]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[181]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Design (a)&quot;</span><span class="p">)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;Design (b)&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Energy consumed&quot;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">devices</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -16199,7 +16207,31 @@ jp-needs-light-background
 
 </div>
 
+</div></div><div class="fragment">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>We don't have time to get into it today, but the t-test is one of the half dozen different tests that you're told to memorize in an Intro Stats class. Each of those tests can be tied back to special cases of linear regression, as explained in <a href="https://lindeloev.github.io/tests-as-linear/">this excellent post</a>.</p>
+
+</div>
+</div>
+</div>
 </div></div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Lesson-5">Lesson 5<a class="anchor-link" href="#Lesson-5">&#182;</a></h3><p>The seemingly disparate statistical concepts of t-tests and linear regression are equivalent!</p>
+
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -16217,7 +16249,9 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Averages alone are insufficient to conclude whether our advertising had an effect on trail use.</p>
+<ul>
+<li>Averages alone are insufficient to conclude whether our advertising had an effect on trail use. </li>
+</ul>
 
 </div>
 </div>
@@ -16244,7 +16278,9 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>When you hypothesize that the averages of two groups of numbers are different or not, the <code>t-test</code> may be able to give you a mathematical way to decide.</p>
+<ul>
+<li>When you hypothesize that the averages of two groups of numbers are different or not, the <code>t-test</code> may be able to give you a mathematical way to decide.</li>
+</ul>
 
 </div>
 </div>
@@ -16256,6 +16292,9 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Linear regression allows you to create a line-of-best-fit for two sets of measurements you believe to be linearly correlated, and also gives you information about the strength of their relationship.</li>
+</ul>
 
 </div>
 </div>
@@ -16267,6 +16306,9 @@ jp-needs-light-background
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>The seemingly disparate statistical concepts of t-tests and linear regression are equivalent!</li>
+</ul>
 
 </div>
 </div>
